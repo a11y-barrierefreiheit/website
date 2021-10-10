@@ -15,7 +15,7 @@
         <div class="hero-text"> 
             <h1>INFORMATIONEN IM ÖPNV FÜR<br>ALLE ZUGÄNGLICH MACHEN</h1>
             <p>Wir heben es uns zur Aufgabe gemacht, mit Hilfe von moderner Bluetooth-Technologie <br> eine barrierefreie Infrastruktur für Personen mit Behinderung zu schaffen. </p>
-            <button>KONTAKT</button>
+            <button onclick="scrollToContact()" >KONTAKT</button>
         </div>
     </div> 
     <main>
@@ -51,23 +51,47 @@
             werden.</p>
         </div>
         <img class='fullWidthImage borderTop' src='./media/Illu_1920.png' alt='Graphische darstellung der Funktionsweise im alltäglichem Umgang' />
-        <div class="kontakt">
+        <div class="kontakt" id='contact'>
             <h2 style="margin-top: 0;">NEHMEN SIE KONTAKT AUF</h2>
             <p>Das liegt vor allem an der Positionierung der Zuganzeiger, die sich an der Decke, 
                 über den Köpfen der Fahrgäste, befinden.
                 Die Inhalte sind somit außer Sichtweite für seheingeschränkte Fahrgäste und für sie 
                 oft schlicht nicht zu erkennen.</p>
-            <form>
+            <form
+                action="https://formspree.io/f/xrgrddjg"
+                method="POST"
+            >
                 <input type="text" name="name" placeholder="Name">
                 <input type="email" name="email" placeholder="Email">
                 <input type="text" name="betreff" placeholder="Betreff">
                 <textarea name='nachricht' placeholder="Nachricht"></textarea>
-                <button class='submit'>SENDEN</button>
+                <button type="submit" class='submit'>SENDEN</button>
             </form>
         </div>
     </main>
     <footer>
+        <div class="logoSection">
+            <img class='bCyber' src='./media/bcyber-logo.png' alt='Logo bCyber' />
+            <img class='innoNative' src='./media/Innovation_Natives_Logo.png' alt='Logo Innovation Natives' />
+        </div>
+        <div class="impressum">
+            <h3>Impressum</h3>
+            <h4>Angaben gem&auml;&szlig; &sect; 5 TMG</h4>
+            <h5>Lasse Jantsch<br />
+            Buxtehuder Stra&szlig;e 13<br />
+            21073 Hamburg</h5>
+            <h4>Kontakt</h4>
+            <h5>Telefon: +49 (0) 1511 9644208<br />
+            E-Mail: mail@a11y.mobi</h5>
+            <h5>Quelle: <a href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de/impressum-generator.html</a></h5>
+        </div>
         
     </footer>
+    <script>
+        // window.scrollTo(0,0)
+        function scrollToContact() {
+            console.log('pressed')
+            window.scrollTo(0, 4100);        }
+    </script>
 </body>
 </html>

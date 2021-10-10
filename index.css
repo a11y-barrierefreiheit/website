@@ -4,6 +4,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin:0;
 }
@@ -137,5 +141,46 @@ textarea {
 
 footer {
     background-color: #FEC78C;
-    height: 50vh;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vh;
+}
+
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6vh;
+}
+
+.bCyber {
+    height: 12vh;
+    margin: 2vh
+
+}
+
+
+.innoNative {
+    height: 6vh;
+    margin: 2vh
+
+}
+
+.impressum {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 6vh;
+
+}
+
+h5 {
+    font-weight: 400;
+    margin: 0 1vh;
+}
+
+h4 {
+    margin: 1vh 0;
 }
