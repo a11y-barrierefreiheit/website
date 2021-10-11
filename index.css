@@ -48,6 +48,7 @@ body {
   top: 28vh;
   left: 16vh;
   width: 60%;
+  min-width: 700px;
   color: white;
 }
 
@@ -82,10 +83,12 @@ main {
 .container {
     width: 100%;
     max-width: 1444px;
+    min-width: 900px;
 }
 
 .paragraph {
     margin: 0 24vh;
+
 }
 
 
@@ -148,11 +151,12 @@ textarea {
 
 footer {
     background-color: #FEC78C;
-    height: 30vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     padding: 6vh;
+    min-width: 900px;
 }
 
 .logoSection {
@@ -163,14 +167,14 @@ footer {
 }
 
 .bCyber {
-    height: 12vh;
+    height: 10vh;
     margin: 2vh
 
 }
 
 
 .innoNative {
-    height: 6vh;
+    height: 4vh;
     margin: 2vh
 
 }
@@ -200,7 +204,7 @@ h4 {
     .logoContainer{
         left: 50%;
         transform: translate(-50%, 0); 
-    
+        
     }
     
     .hero-text {
@@ -208,6 +212,7 @@ h4 {
       top: 28vh;
       left: 0;
       width: 100%;
+      min-width: 0;
       margin: 0 2vh;
     }
     
@@ -221,6 +226,12 @@ h4 {
         margin: 2vh 0   ;
         font-size: 1.75vh;
         line-height: 2.5vh;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1444px;
+        min-width: 0;
     }
         
     .paragraph {
@@ -268,6 +279,8 @@ h4 {
         flex-direction: column;
         justify-content: center;
         padding: 2vh;
+        min-width: 0;
+
     }
         
     .bCyber {
