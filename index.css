@@ -14,17 +14,21 @@ body {
 }
 
 
+
 /* The hero image */
 .hero-image {
     width: 100%;
     min-width: 900px;
     top:0;
     left: 0;
-  background-image:linear-gradient(to right, #00000050, #00000050), url('./media/Hero_1920x1080_compressed.png');
+  background-image:linear-gradient(to right, #00000075, #00000075), url('./media/Hero_1920x1080_compressed.png');
   height: 100vh;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.datenschutzerklärung {
+    height: 20vh;
 }
 
 .logoContainer{
@@ -297,16 +301,23 @@ h4 {
         
     .bCyber {
         height: 8vh;
-        margin: 2vh
+        margin: 0vh
     
     }
     
     
     .innoNative {
         height: 3vh;
-        margin: 2vh
+        margin: 0vh
     
     }
-         
+    
+    .logoSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0vh;
+    }
+    
 
 }

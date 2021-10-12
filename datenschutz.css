@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.hero-image {
+    width: 100%;
+    min-width: 900px;
+    top:0;
+    left: 0;
+  background-image:linear-gradient(to right, #00000075, #00000075), url('./media/Hero_1920x1080_compressed.png');
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.datenschutzerklärung {
+    height: 20vh;
+}
+
+.logoContainer{
+    position: absolute;
+    background-color: #fff;
+    padding: 5vh 4vh 2vh;
+    top: -1vh;
+    left: 16vh;
+    box-shadow: 0 0 1vh #00000080;
+
+
+}
+
+.logo{
+    position: relative;
+    height: 8vh;
+}
+
+footer {
+    background-color: #FEC78C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6vh;
+    min-width: 900px;
+}
+
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6vh;
+}
+
+.bCyber {
+    height: 10vh;
+    margin: 2vh
+
+}
+
+
+.innoNative {
+    height: 4vh;
+    margin: 2vh
+
+}
+
+.impressum {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 6vh;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.datenschutz {
+    max-width: 1444px;
+    min-width: 700px;
+    margin: 12vh;
+}
+
+
+@media (max-width: 479px) {
+
+    .logoContainer{
+        left: 50%;
+        transform: translate(-50%, 0); 
+    }
+
+    .hero-image {
+        min-width: 0;
+    }
+
+    footer {
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 2vh;
+        min-width: 0;
+
+    }
+        
+    .bCyber {
+        height: 8vh;
+        margin: 0vh
+    
+    }
+    
+    
+    .innoNative {
+        height: 3vh;
+        margin: 0vh
+    
+    }
+    
+    .logoSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0vh;
+    }
+    
+    .datenschutz {
+        width: 400px;
+        min-width: 0;
+        margin: 4vh;
+    }
+   
+
+}
